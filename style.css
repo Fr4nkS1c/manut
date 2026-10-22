@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins";
+}
+
+button {
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    opacity: .8;
+    transition: all .3s;
+}
+
+button:hover {
+    opacity: 100;
+}
+
+p {
+    opacity: 0.7;
+}
+
+a {
+    color: white;
+    opacity: 0.7;
+    transition: all .3s;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 4%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+
+    ul {
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+        background-color: rgba(240, 248, 255, 0.229);
+        padding: 16px 40px;
+        backdrop-filter: blur(25px);
+        border-radius: 50px;
+
+    }
+}
+
+.logotipo {
+    width: 45px;
+    transition: all .3s;
+}
+
+.logotipo:hover {
+    width: 50px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.secao1 {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Assets/artistic-blurry-colorful-wallpaper-background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        font-size: 5vw;
+        color: rgba(255, 255, 255, 0.714);
+        mix-blend-mode: color-dodge;
+        font-weight: 1000;
+    }
+
+}
+
+
+.conteudoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .divButton {
+        display: flex;
+        gap: 15px;
+        margin-top: 28px;
+
+        .primaryButton {
+            background-color: rgba(255, 255, 255, 0.898);
+            gap: 8px;
+            padding: 6px 12px 6px 20px;
+
+            img {
+                width: 18px;
+            }
+        }
+
+        .secondaryButton {
+            background-color: rgba(240, 248, 255, 0.2);
+            color: white;
+            gap: 8px;
+            padding: 6px 20px 6px 20px;
+        }
+    }
+
+}
+
+.tituloSecao {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.secao2 {
+    align-items: center;
+}
+
+.divCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0px 120px;
+
+}
+
+.card {
+    width: 32%;
+    padding: 32px 20px;
+
+    img {
+        filter: saturate(0);
+        transition: all .3s;
+
+        &:hover {
+            filter: saturate(1);
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 10px 0px 4px;
+    }
+}
+
+.branco {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
